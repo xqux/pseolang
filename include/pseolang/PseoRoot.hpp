@@ -50,7 +50,7 @@ namespace pseolang::details
 
 	public: // the default initial state of the object
 		void clear() noexcept;
-		auto empty() noexcept const -> bool;
+		auto empty() const noexcept -> bool;
 
 	public:
 		auto error() const noexcept -> Error
