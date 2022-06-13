@@ -25,8 +25,8 @@ add_library(${PROJECT_NAME}
 # Place the library in the current project directory
 set_target_properties(${PROJECT_NAME}
 	PROPERTIES
-	ARCHIVE_OUTPUT_DIRECTORY ${PSEOLANG_LIBRARY_DIR} # Static Library
-	LIBRARY_OUTPUT_DIRECTORY ${PSEOLANG_LIBRARY_DIR} # Shared Library
+	ARCHIVE_OUTPUT_DIRECTORY ${PSEOLANG_LIBRARY_DIR} # Static library
+	LIBRARY_OUTPUT_DIRECTORY ${PSEOLANG_LIBRARY_DIR} # Dynamic library
 )
 
 # Set include directories to use when compiling
