@@ -40,6 +40,8 @@ namespace pseolang::details
 			INVALID_WHITESPACE_CHAR = 6,
 			SPACE_AS_LAST_CHAR_OF_LINE = 7,
 			UNACCEPTABLE_SCOPE = 8
+			
+			// each file must end with exactly one newline character
 		};
 
 	public: // creation and destruction of objects
