@@ -1,0 +1,20 @@
+#                           | /* this C program will convert all whitespace characters
+#                           |  * of a null-terminated string to the underscore (_) */
+alg                         | char *highlight_gaps(char *buf)
+#                           | {
+loop> while
+  decision                  |     while (*buf != '\0')
+  => true
+      #                     |     {
+      decision              |         if (isspace(*buf))
+      => true
+        #                   |     {
+        process             |         *buf = '_';
+        #                   |     }
+      process               |         ++buf;
+      loop> while
+      #                     |     }
+#                           |
+#                           |     /* end of the string */
+.alg                        |     return buf;
+#                           | }

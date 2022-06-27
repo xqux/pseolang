@@ -1,0 +1,10 @@
+# flowchart https://infohubblog.com/wp-content/uploads/2021/08/dowhile.png
+alg: Start
+
+loop: 1
+  process: Do Task
+  decision: Condition?
+  => True
+    loop: 1
+  => False
+    .alg: End

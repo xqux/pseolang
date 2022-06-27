@@ -1,0 +1,17 @@
+# flowchart https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flowchart_en.svg/800px-Flowchart_en.svg.png
+alg: Start
+
+action: i := 1
+loop: cycle
+  io: Output of i
+  decision: i = 39?
+  => ✅
+    i := 62
+    loop: cycle
+  => ❎
+    i := i + 1
+    decision: i ≤ 100?
+    => ✅
+      loop: cycle
+    => ❎
+      .alg: Stop

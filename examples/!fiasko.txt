@@ -1,0 +1,33 @@
+# flowchart https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/800px-LampFlowchart.svg.png
+alg: Lamp doesn't work
+
+
+decision: Lamp plugged in?
+=> No
+  .process: Plug in lamp
+=> Yes
+    decision: Bulb burned out?
+    => Yes
+      .process: Replace bulb
+      => Yes
+        .process: Replace bulb
+      => No
+        .process: Repair lamp
+    => No
+      .process: Repair lamp
+      => Yes
+        .process: Replace bulb312321321321321332123173218238723783217812387321282873122872318
+        => Yes
+          .process: Repair lamp
+          => Yes
+            .process: Replace bulb
+          => No
+            .process: Repair lamp
+        => No
+          .process: Repair lamp
+      => No
+        .process: Repair lamp
+        => Yes
+          .process: Replace bulb
+        => No
+          .process: Repair lamp
