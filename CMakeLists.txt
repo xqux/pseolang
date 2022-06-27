@@ -7,14 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 # pseolang
-set(PSEOLANG_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+set(pseolang_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(PSEOLANG_INCLUDE_DIR "${PSEOLANG_DIR}/include")
-set(PSEOLANG_SOURCE_DIR "${PSEOLANG_DIR}/src")
-set(PSEOLANG_LIBRARY_DIR "${PSEOLANG_DIR}/lib")
+set(pseolang_INCLUDE_DIR "${pseolang_DIR}/include")
+set(pseolang_SOURCE_DIR "${pseolang_DIR}/src")
+set(pseolang_LIBRARY_DIR "${pseolang_DIR}/lib")
 
-file(GLOB_RECURSE PSEOLANG_INCLUDE_FILES "${PSEOLANG_INCLUDE_DIR}/*")
-file(GLOB_RECURSE PSEOLANG_SOURCE_FILES "${PSEOLANG_SOURCE_DIR}/*")
+file(GLOB_RECURSE pseolang_INCLUDE_FILES "${pseolang_INCLUDE_DIR}/*")
+file(GLOB_RECURSE pseolang_SOURCE_FILES "${pseolang_SOURCE_DIR}/*")
 
 # Create the static library
 add_library(${PROJECT_NAME}
@@ -31,6 +31,6 @@ set_target_properties(${PROJECT_NAME}
 
 # Set include directories to use when compiling
 target_include_directories(${PROJECT_NAME}
-	PRIVATE
+	PUBLIC
 	${PSEOLANG_INCLUDE_DIR}
 )
